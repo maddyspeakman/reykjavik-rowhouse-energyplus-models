@@ -6,7 +6,7 @@ This repository contains EnergyPlus Input Data (IDF) files used in simulations f
 
 ## Repository Contents
 
-All EnergyPlus IDF files are organized in the `idf_files/` directory by building group and scenario.
+All EnergyPlus IDF files are organized in the `InputDataFiles/` directory by building group and scenario.
 
 ### Building Groups
 
