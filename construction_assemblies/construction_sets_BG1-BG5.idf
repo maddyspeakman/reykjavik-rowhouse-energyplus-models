@@ -5,7 +5,6 @@
 
 ! --------------------------------------------------------------------------------------------------
 ! BG1 CONSTRUCTION SET
-! Source file: BG1_S0_baseline.idf
 ! --------------------------------------------------------------------------------------------------
 
 ! BG1 MATERIAL DEFINITIONS
@@ -177,7 +176,7 @@ WindowMaterial:SimpleGlazingSystem,
 ! BG1 CONSTRUCTION ASSEMBLIES
 ! --------------------------------------------------------------------------------------------------
 
-! FLOOR-ON-FILL / GROUND FLOORS
+! FLOOR-ON-FILL
 
 Construction,
   BG1 - Floor on Fill,                    !- Name
@@ -215,7 +214,7 @@ Construction,
   BG1 - Party Wall Concrete Block,        !- Layer 1
   BG1 - Int Wall Finish (13mm gypsum board); !- Layer 2
 
-! ROOF / CEILING ASSEMBLIES
+! ROOFCEILING ASSEMBLIES
 
 Construction,
   BG1 - RoofCeiling (Metal),              !- Name
@@ -245,7 +244,6 @@ Construction,
 
 ! --------------------------------------------------------------------------------------------------
 ! BG2 CONSTRUCTION SET
-! Source file: BG2_S0_baseline.idf
 ! --------------------------------------------------------------------------------------------------
 
 ! BG2 MATERIAL DEFINITIONS
@@ -395,7 +393,7 @@ WindowMaterial:SimpleGlazingSystem,
 ! BG2 CONSTRUCTION ASSEMBLIES
 ! --------------------------------------------------------------------------------------------------
 
-! FLOOR-ON-FILL / GROUND FLOORS
+! FLOOR-ON-FILL
 
 Construction,
   BG2 - Floor on Fill,                    !- Name
@@ -427,7 +425,7 @@ Construction,
   BG2 -  Party Wall Concrete Block,       !- Layer 1
   BG2 -  Int Wall Finish (13mm gypsum board); !- Layer 2
 
-! ROOF / CEILING ASSEMBLIES
+! ROOF ASSEMBLIES
 
 Construction,
   BG2 - RoofCeiling,                      !- Name
@@ -451,7 +449,6 @@ Construction,
 
 ! --------------------------------------------------------------------------------------------------
 ! BG3 CONSTRUCTION SET
-! Source file: BG3_S0_baseline.idf
 ! --------------------------------------------------------------------------------------------------
 
 ! BG3 MATERIAL DEFINITIONS
@@ -601,7 +598,7 @@ WindowMaterial:SimpleGlazingSystem,
 ! BG3 CONSTRUCTION ASSEMBLIES
 ! --------------------------------------------------------------------------------------------------
 
-! FLOOR-ON-FILL / GROUND FLOORS
+! FLOOR-ON-FILL
 
 Construction,
   BG3 - Floor on Fill,                    !- Name
@@ -641,7 +638,7 @@ Construction,
   BG3 - Party Wall Concrete Block,        !- Layer 1
   BG3 - Int Wall Finish (13mm gypsum board); !- Layer 2
 
-! ROOF / CEILING ASSEMBLIES
+! ROOFCEILING ASSEMBLIES
 
 Construction,
   BG3 - RoofCeiling,                      !- Name
@@ -665,17 +662,10 @@ Construction,
 
 ! --------------------------------------------------------------------------------------------------
 ! BG4 CONSTRUCTION SET
-! Source file: BG4_S0_baseline.idf
 ! --------------------------------------------------------------------------------------------------
 
 ! BG4 MATERIAL DEFINITIONS
 ! --------------------------------------------------------------------------------------------------
-
-!--------------------------------------------------------------------------------
-! Build Material & Construction definitions for envelope 
-!    floor on fill, ext walls, roof/ceilings, ext doors (opaque), 
-!    ext windows/glass doors, party walls)
-!--------------------------------------------------------------------------------
 
 ! FLOOR-ON-Fill
 
@@ -833,7 +823,7 @@ WindowMaterial:SimpleGlazingSystem,
 ! BG4 CONSTRUCTION ASSEMBLIES
 ! --------------------------------------------------------------------------------------------------
 
-! FLOOR-ON-FILL / GROUND FLOORS
+! FLOOR-ON-FILL
 
 Construction,
   BG4 - Floor on Fill,                    !- Name
@@ -857,7 +847,7 @@ Construction,
   BG4 - Party Wall Concrete Block,            !- Layer 1
   BG4 - Int Wall Finish (13mm gypsum board);  !- Layer 2
 
-! ROOF / CEILING ASSEMBLIES
+! ROOFCEILING ASSEMBLIES
 
 Construction,
   BG4 - RoofCeiling,                          !- Name
@@ -881,7 +871,6 @@ Construction,
 
 ! --------------------------------------------------------------------------------------------------
 ! BG5 CONSTRUCTION SET
-! Source file: BG5_S0_baseline.idf
 ! --------------------------------------------------------------------------------------------------
 
 ! BG5 MATERIAL DEFINITIONS
@@ -1042,7 +1031,7 @@ WindowMaterial:SimpleGlazingSystem,
 ! BG5 CONSTRUCTION ASSEMBLIES
 ! --------------------------------------------------------------------------------------------------
 
-! FLOOR-ON-FILL / GROUND FLOORS
+! FLOOR-ON-FILL
 
 Construction,
   BG5 - Floor on Fill,                    !- Name
@@ -1081,7 +1070,7 @@ Construction,
   BG5 - Party Wall Concrete Block,           !- Layer 1
   BG5 - Int Wall Finish (13mm gypsum board); !- Layer 2
 
-! ROOF / CEILING ASSEMBLIES
+! ROOF ASSEMBLIES
 
 Construction,
   BG5 - RoofCeiling (concrete),              !- Name
@@ -1098,9 +1087,6 @@ Construction,
   BG5 - Int Wall Finish (13mm gypsum board); !- Layer 4
 
 ! EXTERIOR OPAQUE DOORS
-
-! Build Construction definitions for envelope (floor on fill, ext walls, roof/ceilings, ext doors (opaque), 
-!    ext windows/glass doors, party walls)
 
 Construction,
   BG5 - Ext Door (opaque),                !- Name
