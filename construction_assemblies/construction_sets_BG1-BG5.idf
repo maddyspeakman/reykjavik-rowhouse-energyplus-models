@@ -1,0 +1,1115 @@
+! ==================================================================================================
+! CONSTRUCTION SETS FOR BG1-BG5
+! Extracted from EnergyPlus IDF files for BG1–BG5
+! ==================================================================================================
+
+! --------------------------------------------------------------------------------------------------
+! BG1 CONSTRUCTION SET
+! Source file: BG1_S0_baseline.idf
+! --------------------------------------------------------------------------------------------------
+
+! BG1 MATERIAL DEFINITIONS
+! --------------------------------------------------------------------------------------------------
+
+Material,
+  BG1 - Concrete Floor Slab,              !- Name
+  MediumRough,                            !- Roughness
+  0.2,                                    !- Thickness {m}
+  1.4,                                    !- Conductivity {W/m-K}
+  2100,                                   !- Density {kg/m3}
+  840,                                    !- Specific Heat {J/kg-K}
+  0.85,                                   !- Thermal Absorptance
+  0.65,                                   !- Solar Absorptance
+  0.65;                                   !- Visible Absorptance
+
+Material,
+  BG1 - Ext Door (wood),                  !- Name
+  Smooth,                                 !- Roughness
+  0.026,                                  !- Thickness {m}
+  0.14,                                   !- Conductivity {W/m-K}
+  419,                                    !- Density {kg/m3}
+  2720,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.6,                                    !- Solar Absorptance
+  0.6;                                    !- Visible Absorptance
+
+Material,
+  BG1 - Ext Wall Concrete Block,          !- Name
+  MediumRough,                            !- Roughness
+  0.2,                                    !- Thickness {m}
+  1.4,                                    !- Conductivity {W/m-K}
+  2100,                                   !- Density {kg/m3}
+  840,                                    !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG1 - Ext Wall Façade (Cement Plaster), !- Name
+  MediumRough,                            !- Roughness
+  0.01,                                   !- Thickness {m}
+  0.72,                                   !- Conductivity {W/m-K}
+  1860,                                   !- Density {kg/m3}
+  800,                                    !- Specific Heat {J/kg-K}
+  0.91,                                   !- Thermal Absorptance
+  0.3,                                    !- Solar Absorptance
+  0.3;                                    !- Visible Absorptance
+
+Material,
+  BG1 - Ext Wall Insulation (Heavyweight), !- Name
+  MediumRough,                            !- Roughness
+  0.017,                                  !- Thickness {m}
+  0.035,                                  !- Conductivity {W/m-K}
+  25,                                     !- Density {kg/m3}
+  1000,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG1 - Ext Wall Insulation (Lightweight), !- Name
+  MediumRough,                            !- Roughness
+  0.019,                                  !- Thickness {m}
+  0.035,                                  !- Conductivity {W/m-K}
+  25,                                     !- Density {kg/m3}
+  1000,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG1 - Ext Wall Plywood Sheathing,       !- Name
+  MediumRough,                            !- Roughness
+  0.012,                                  !- Thickness {m}
+  0.15,                                   !- Conductivity {W/m-K}
+  560,                                    !- Density {kg/m3}
+  2500,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG1 - Floor Finish (15mm wood),         !- Name
+  MediumSmooth,                           !- Roughness
+  0.015,                                  !- Thickness {m}
+  0.14,                                   !- Conductivity {W/m-K}
+  650,                                    !- Density {kg/m3}
+  1200,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG1 - Floor on Fill Insulation,         !- Name
+  MediumRough,                            !- Roughness
+  0.016,                                  !- Thickness {m}
+  0.035,                                  !- Conductivity {W/m-K}
+  25,                                     !- Density {kg/m3}
+  1400,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG1 - Int Wall Finish (13mm gypsum board), !- Name
+  Smooth,                                 !- Roughness
+  0.013,                                  !- Thickness {m}
+  0.16,                                   !- Conductivity {W/m-K}
+  950,                                    !- Density {kg/m3}
+  840,                                    !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.3,                                    !- Solar Absorptance
+  0.3;                                    !- Visible Absorptance
+
+Material,
+  BG1 - Party Wall Concrete Block,        !- Name
+  MediumRough,                            !- Roughness
+  0.1,                                    !- Thickness {m}
+  1.4,                                    !- Conductivity {W/m-K}
+  2100,                                   !- Density {kg/m3}
+  840,                                    !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG1 - Roof Insulation (concrete),       !- Name
+  MediumRough,                            !- Roughness
+  0.018,                                  !- Thickness {m}
+  0.035,                                  !- Conductivity {W/m-K}
+  25,                                     !- Density {kg/m3}
+  1000,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG1 - Roof Insulation (timber),         !- Name
+  MediumRough,                            !- Roughness
+  0.019,                                  !- Thickness {m}
+  0.035,                                  !- Conductivity {W/m-K}
+  25,                                     !- Density {kg/m3}
+  1000,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG1 - Roof Metal Cladding,              !- Name
+  Smooth,                                 !- Roughness
+  0.008,                                  !- Thickness {m}
+  0.29,                                   !- Conductivity {W/m-K}
+  1250,                                   !- Density {kg/m3}
+  1000,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.4,                                    !- Solar Absorptance
+  0.4;                                    !- Visible Absorptance
+
+! BG1 WINDOW MATERIAL DEFINITIONS
+! --------------------------------------------------------------------------------------------------
+
+WindowMaterial:SimpleGlazingSystem,
+  BG1 - Glazing,                          !- Name
+  2.5,                                    !- U-Factor {W/m2-K}
+  0.58,                                   !- Solar Heat Gain Coefficient
+  0.57;                                   !- Visible Transmittance
+
+! BG1 CONSTRUCTION ASSEMBLIES
+! --------------------------------------------------------------------------------------------------
+
+! FLOOR-ON-FILL / GROUND FLOORS
+
+Construction,
+  BG1 - Floor on Fill,                    !- Name
+  BG1 - Floor on Fill Insulation,         !- Layer 1
+  BG1 - Concrete Floor Slab,              !- Layer 2
+  BG1 - Floor Finish (15mm wood);         !- Layer 3
+
+! INTERIOR FLOORS
+
+Construction,
+  BG1 - Interior Floor,                   !- Name
+  BG1 - Concrete Floor Slab,              !- Layer 1
+  BG1 - Floor Finish (15mm wood);         !- Layer 2
+
+! EXTERIOR WALLS
+
+Construction,
+  BG1 - Ext Wall (Concrete),              !- Name
+  BG1 - Ext Wall Façade (Cement Plaster), !- Layer 1
+  BG1 - Ext Wall Concrete Block,          !- Layer 2
+  BG1 - Ext Wall Insulation (Heavyweight), !- Layer 3
+  BG1 - Int Wall Finish (13mm gypsum board); !- Layer 4
+
+Construction,
+  BG1 - Ext Wall (Timber),                !- Name
+  BG1 - Roof Metal Cladding,              !- Layer 1
+  BG1 - Ext Wall Plywood Sheathing,       !- Layer 2
+  BG1 - Ext Wall Insulation (Lightweight), !- Layer 3
+  BG1 - Int Wall Finish (13mm gypsum board); !- Layer 4
+
+! PARTY WALLS
+
+Construction,
+  BG1 - Party Wall,                       !- Name
+  BG1 - Party Wall Concrete Block,        !- Layer 1
+  BG1 - Int Wall Finish (13mm gypsum board); !- Layer 2
+
+! ROOF / CEILING ASSEMBLIES
+
+Construction,
+  BG1 - RoofCeiling (Metal),              !- Name
+  BG1 - Roof Metal Cladding,              !- Layer 1
+  BG1 - Ext Wall Plywood Sheathing,       !- Layer 2
+  BG1 - Roof Insulation (timber),         !- Layer 3
+  BG1 - Int Wall Finish (13mm gypsum board); !- Layer 4
+
+Construction,
+  BG1 - RoofCeiling (Non-metal),          !- Name
+  BG1 - Ext Wall Concrete Block,          !- Layer 1
+  BG1 - Roof Insulation (concrete),       !- Layer 2
+  BG1 - Int Wall Finish (13mm gypsum board); !- Layer 3
+
+! EXTERIOR OPAQUE DOORS
+
+Construction,
+  BG1 - Ext Door,                         !- Name
+  BG1 - Ext Door (wood);                  !- Layer 1
+
+! WINDOWS AND GLASS DOORS
+
+Construction,
+  BG1 - Window/GlassDoor,                 !- Name
+  BG1 - Glazing;                          !- Layer 1
+
+
+! --------------------------------------------------------------------------------------------------
+! BG2 CONSTRUCTION SET
+! Source file: BG2_S0_baseline.idf
+! --------------------------------------------------------------------------------------------------
+
+! BG2 MATERIAL DEFINITIONS
+! --------------------------------------------------------------------------------------------------
+
+Material,
+  BG2 -  Ext Door (pine),                 !- Name
+  MediumSmooth,                           !- Roughness
+  0.026,                                  !- Thickness {m}
+  0.14,                                   !- Conductivity {W/m-K}
+  419,                                    !- Density {kg/m3}
+  2720,                                   !- Specific Heat {J/kg-K}
+  0.6,                                    !- Thermal Absorptance
+  0.6,                                    !- Solar Absorptance
+  0.6;                                    !- Visible Absorptance
+
+Material,
+  BG2 -  Ext Wall Concrete Block,         !- Name
+  MediumRough,                            !- Roughness
+  0.2,                                    !- Thickness {m}
+  1.4,                                    !- Conductivity {W/m-K}
+  2100,                                   !- Density {kg/m3}
+  840,                                    !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG2 -  Ext Wall Façade (cement plaster), !- Name
+  MediumRough,                            !- Roughness
+  0.01,                                   !- Thickness {m}
+  0.72,                                   !- Conductivity {W/m-K}
+  1860,                                   !- Density {kg/m3}
+  800,                                    !- Specific Heat {J/kg-K}
+  0.91,                                   !- Thermal Absorptance
+  0.2,                                    !- Solar Absorptance
+  0.2;                                    !- Visible Absorptance
+
+Material,
+  BG2 -  Ext Wall Insulation,             !- Name
+  MediumRough,                            !- Roughness
+  0.031,                                  !- Thickness {m}
+  0.035,                                  !- Conductivity {W/m-K}
+  25,                                     !- Density {kg/m3}
+  1000,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG2 -  Int Wall Finish (13mm gypsum board), !- Name
+  Smooth,                                 !- Roughness
+  0.013,                                  !- Thickness {m}
+  0.16,                                   !- Conductivity {W/m-K}
+  950,                                    !- Density {kg/m3}
+  840,                                    !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.3,                                    !- Solar Absorptance
+  0.3;                                    !- Visible Absorptance
+
+Material,
+  BG2 -  Party Wall Concrete Block,       !- Name
+  Smooth,                                 !- Roughness
+  0.12,                                   !- Thickness {m}
+  1.4,                                    !- Conductivity {W/m-K}
+  2100,                                   !- Density {kg/m3}
+  840,                                    !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG2 -  Roof Insulation,                 !- Name
+  MediumRough,                            !- Roughness
+  0.033,                                  !- Thickness {m}
+  0.035,                                  !- Conductivity {W/m-K}
+  25,                                     !- Density {kg/m3}
+  1000,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG2 - Concrete Floor Slab,              !- Name
+  MediumRough,                            !- Roughness
+  0.2,                                    !- Thickness {m}
+  1.4,                                    !- Conductivity {W/m-K}
+  2100,                                   !- Density {kg/m3}
+  840,                                    !- Specific Heat {J/kg-K}
+  0.85,                                   !- Thermal Absorptance
+  0.65,                                   !- Solar Absorptance
+  0.65;                                   !- Visible Absorptance
+
+Material,
+  BG2 - Floor Finish (15mm wood),         !- Name
+  MediumSmooth,                           !- Roughness
+  0.015,                                  !- Thickness {m}
+  0.14,                                   !- Conductivity {W/m-K}
+  650,                                    !- Density {kg/m3}
+  1200,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG2 - Floor on Fill Insulation,         !- Name
+  MediumRough,                            !- Roughness
+  0.03,                                   !- Thickness {m}
+  0.035,                                  !- Conductivity {W/m-K}
+  25,                                     !- Density {kg/m3}
+  1400,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG2 - Roof Membrane (Bitumen),          !- Name
+  Smooth,                                 !- Roughness
+  0.004,                                  !- Thickness {m}
+  0.5,                                    !- Conductivity {W/m-K}
+  1700,                                   !- Density {kg/m3}
+  1000,                                   !- Specific Heat {J/kg-K}
+  0.93,                                   !- Thermal Absorptance
+  0.4,                                    !- Solar Absorptance
+  0.4;                                    !- Visible Absorptance
+
+Material,
+  BG2 - Roof Plywood Sheathing,           !- Name
+  MediumRough,                            !- Roughness
+  0.012,                                  !- Thickness {m}
+  0.15,                                   !- Conductivity {W/m-K}
+  560,                                    !- Density {kg/m3}
+  2500,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+! BG2 WINDOW MATERIAL DEFINITIONS
+! --------------------------------------------------------------------------------------------------
+
+WindowMaterial:SimpleGlazingSystem,
+  BG2 - Glazing,                          !- Name
+  2.5,                                    !- U-Factor {W/m2-K}
+  0.58,                                   !- Solar Heat Gain Coefficient
+  0.57;                                   !- Visible Transmittance
+
+! BG2 CONSTRUCTION ASSEMBLIES
+! --------------------------------------------------------------------------------------------------
+
+! FLOOR-ON-FILL / GROUND FLOORS
+
+Construction,
+  BG2 - Floor on Fill,                    !- Name
+  BG2 - Floor on Fill Insulation,         !- Layer 1
+  BG2 - Concrete Floor Slab,              !- Layer 2
+  BG2 - Floor Finish (15mm wood);         !- Layer 3
+
+! INTERIOR FLOORS
+
+Construction,
+  BG2 - Interior Floor,                   !- Name
+  BG2 -  Int Wall Finish (13mm gypsum board), !- Layer 1
+  BG2 - Concrete Floor Slab,              !- Layer 2
+  BG2 - Floor Finish (15mm wood);         !- Layer 3
+
+! EXTERIOR WALLS
+
+Construction,
+  BG2 - Ext Wall,                         !- Name
+  BG2 -  Ext Wall Façade (cement plaster), !- Layer 1
+  BG2 -  Ext Wall Concrete Block,         !- Layer 2
+  BG2 -  Ext Wall Insulation,             !- Layer 3
+  BG2 -  Int Wall Finish (13mm gypsum board); !- Layer 4
+
+! PARTY WALLS
+
+Construction,
+  BG2 - Party Wall,                       !- Name
+  BG2 -  Party Wall Concrete Block,       !- Layer 1
+  BG2 -  Int Wall Finish (13mm gypsum board); !- Layer 2
+
+! ROOF / CEILING ASSEMBLIES
+
+Construction,
+  BG2 - RoofCeiling,                      !- Name
+  BG2 - Roof Membrane (Bitumen),          !- Layer 1
+  BG2 -  Roof Insulation,                 !- Layer 2
+  BG2 - Roof Plywood Sheathing,           !- Layer 3
+  BG2 -  Int Wall Finish (13mm gypsum board); !- Layer 4
+
+! EXTERIOR OPAQUE DOORS
+
+Construction,
+  BG2 - Ext Door,                         !- Name
+  BG2 -  Ext Door (pine);                 !- Layer 1
+
+! WINDOWS AND GLASS DOORS
+
+Construction,
+  BG2 - Window/GlassDoor,                 !- Name
+  BG2 - Glazing;                          !- Layer 1
+
+
+! --------------------------------------------------------------------------------------------------
+! BG3 CONSTRUCTION SET
+! Source file: BG3_S0_baseline.idf
+! --------------------------------------------------------------------------------------------------
+
+! BG3 MATERIAL DEFINITIONS
+! --------------------------------------------------------------------------------------------------
+
+Material,
+  BG3 - Concrete Floor Slab,              !- Name
+  MediumRough,                            !- Roughness
+  0.2,                                    !- Thickness {m}
+  1.4,                                    !- Conductivity {W/m-K}
+  2100,                                   !- Density {kg/m3}
+  840,                                    !- Specific Heat {J/kg-K}
+  0.85,                                   !- Thermal Absorptance
+  0.65,                                   !- Solar Absorptance
+  0.65;                                   !- Visible Absorptance
+
+Material,
+  BG3 - Ext Door (Pine Wood),             !- Name
+  MediumSmooth,                           !- Roughness
+  0.026,                                  !- Thickness {m}
+  0.14,                                   !- Conductivity {W/m-K}
+  419,                                    !- Density {kg/m3}
+  2720,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.6,                                    !- Solar Absorptance
+  0.6;                                    !- Visible Absorptance
+
+Material,
+  BG3 - Ext Wall Concrete Block,          !- Name
+  MediumRough,                            !- Roughness
+  0.25,                                   !- Thickness {m}
+  1.4,                                    !- Conductivity {W/m-K}
+  2100,                                   !- Density {kg/m3}
+  840,                                    !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG3 - Ext Wall Façade (Cement Plaster), !- Name
+  MediumRough,                            !- Roughness
+  0.01,                                   !- Thickness {m}
+  0.72,                                   !- Conductivity {W/m-K}
+  1860,                                   !- Density {kg/m3}
+  800,                                    !- Specific Heat {J/kg-K}
+  0.91,                                   !- Thermal Absorptance
+  0.2,                                    !- Solar Absorptance
+  0.2;                                    !- Visible Absorptance
+
+Material,
+  BG3 - Ext Wall Insulation,              !- Name
+  MediumRough,                            !- Roughness
+  0.049,                                  !- Thickness {m}
+  0.035,                                  !- Conductivity {W/m-K}
+  25,                                     !- Density {kg/m3}
+  1000,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG3 - Floor Finish (15mm wood),         !- Name
+  MediumSmooth,                           !- Roughness
+  0.015,                                  !- Thickness {m}
+  0.14,                                   !- Conductivity {W/m-K}
+  650,                                    !- Density {kg/m3}
+  1200,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG3 - Floor on Fill Insulation,         !- Name
+  MediumRough,                            !- Roughness
+  0.073,                                  !- Thickness {m}
+  0.035,                                  !- Conductivity {W/m-K}
+  25,                                     !- Density {kg/m3}
+  1400,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG3 - Ground Contact Wall Insulation,   !- Name
+  MediumRough,                            !- Roughness
+  0.049,                                  !- Thickness {m}
+  0.035,                                  !- Conductivity {W/m-K}
+  25,                                     !- Density {kg/m3}
+  1000,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG3 - Int Wall Finish (13mm gypsum board), !- Name
+  Smooth,                                 !- Roughness
+  0.013,                                  !- Thickness {m}
+  0.16,                                   !- Conductivity {W/m-K}
+  950,                                    !- Density {kg/m3}
+  840,                                    !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.3,                                    !- Solar Absorptance
+  0.3;                                    !- Visible Absorptance
+
+Material,
+  BG3 - Party Wall Concrete Block,        !- Name
+  MediumRough,                            !- Roughness
+  0.125,                                  !- Thickness {m}
+  1.4,                                    !- Conductivity {W/m-K}
+  2100,                                   !- Density {kg/m3}
+  840,                                    !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG3 - Roof Insulation,                  !- Name
+  MediumRough,                            !- Roughness
+  0.102,                                  !- Thickness {m}
+  0.035,                                  !- Conductivity {W/m-K}
+  25,                                     !- Density {kg/m3}
+  1000,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG3 - Roof Metal Cladding,              !- Name
+  Smooth,                                 !- Roughness
+  0.008,                                  !- Thickness {m}
+  0.29,                                   !- Conductivity {W/m-K}
+  1250,                                   !- Density {kg/m3}
+  1000,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.8,                                    !- Solar Absorptance
+  0.8;                                    !- Visible Absorptance
+
+! BG3 WINDOW MATERIAL DEFINITIONS
+! --------------------------------------------------------------------------------------------------
+
+WindowMaterial:SimpleGlazingSystem,
+  BG3 - Glazing,                          !- Name
+  2.5,                                    !- U-Factor {W/m2-K}
+  0.58,                                   !- Solar Heat Gain Coefficient
+  0.57;                                   !- Visible Transmittance
+
+! BG3 CONSTRUCTION ASSEMBLIES
+! --------------------------------------------------------------------------------------------------
+
+! FLOOR-ON-FILL / GROUND FLOORS
+
+Construction,
+  BG3 - Floor on Fill,                    !- Name
+  BG3 - Floor on Fill Insulation,         !- Layer 1
+  BG3 - Concrete Floor Slab,              !- Layer 2
+  BG3 - Floor Finish (15mm wood);         !- Layer 3
+
+! GROUND-CONTACT WALLS
+
+Construction,
+  BG3 - Ground Contact Wall,              !- Name
+  BG3 - Ext Wall Concrete Block,          !- Layer 1
+  BG3 - Ground Contact Wall Insulation,   !- Layer 2
+  BG3 - Int Wall Finish (13mm gypsum board); !- Layer 3
+
+! INTERIOR FLOORS
+
+Construction,
+  BG3 - Interior Floor,                   !- Name
+  BG3 - Floor Finish (15mm wood),         !- Layer 1
+  BG3 - Concrete Floor Slab,              !- Layer 2
+  BG3 - Int Wall Finish (13mm gypsum board); !- Layer 3
+
+! EXTERIOR WALLS
+
+Construction,
+  BG3 - Ext Wall,                         !- Name
+  BG3 - Ext Wall Façade (Cement Plaster), !- Layer 1
+  BG3 - Ext Wall Concrete Block,          !- Layer 2
+  BG3 - Ext Wall Insulation,              !- Layer 3
+  BG3 - Int Wall Finish (13mm gypsum board); !- Layer 4
+
+! PARTY WALLS
+
+Construction,
+  BG3 - Party Wall,                       !- Name
+  BG3 - Party Wall Concrete Block,        !- Layer 1
+  BG3 - Int Wall Finish (13mm gypsum board); !- Layer 2
+
+! ROOF / CEILING ASSEMBLIES
+
+Construction,
+  BG3 - RoofCeiling,                      !- Name
+  BG3 - Roof Metal Cladding,              !- Layer 1
+  BG3 - Roof Insulation,                  !- Layer 2
+  BG3 - Ext Wall Concrete Block,          !- Layer 3
+  BG3 - Int Wall Finish (13mm gypsum board); !- Layer 4
+
+! EXTERIOR OPAQUE DOORS
+
+Construction,
+  BG3 - Ext Door,                         !- Name
+  BG3 - Ext Door (Pine Wood);             !- Layer 1
+
+! WINDOWS AND GLASS DOORS
+
+Construction,
+  BG3 - Window/GlassDoor,                 !- Name
+  BG3 - Glazing;                          !- Layer 1
+
+
+! --------------------------------------------------------------------------------------------------
+! BG4 CONSTRUCTION SET
+! Source file: BG4_S0_baseline.idf
+! --------------------------------------------------------------------------------------------------
+
+! BG4 MATERIAL DEFINITIONS
+! --------------------------------------------------------------------------------------------------
+
+!--------------------------------------------------------------------------------
+! Build Material & Construction definitions for envelope 
+!    floor on fill, ext walls, roof/ceilings, ext doors (opaque), 
+!    ext windows/glass doors, party walls)
+!--------------------------------------------------------------------------------
+
+! FLOOR-ON-Fill
+
+Material,
+  BG4 - Floor on Fill Insulation,         !- Name
+  MediumSmooth,                           !- Roughness
+  0.102,                                  !- Thickness {m}
+  0.035,                                  !- Conductivity {W/m-K}
+  25,                                     !- Density {kg/m3}
+  1400,                                   !- Specific Heat {J/kg-K}
+  ,                                       !- Thermal Absorptance
+  ,                                       !- Solar Absorptance
+  ;                                       !- Visible Absorptance
+
+Material,
+  BG4 - Concrete Floor Slab,              !- Name
+  MediumRough,                            !- Roughness
+  0.20,                                   !- Thickness {m}
+  1.400,                                  !- Conductivity {W/m-K}
+  2100,                                   !- Density {kg/m3}
+  840,                                    !- Specific Heat {J/kg-K}
+  0.85,                                   !- Thermal Absorptance
+  0.65,                                   !- Solar Absorptance
+  0.65;                                   !- Visible Absorptance
+
+Material,
+  BG4 - Floor Finish (25mm wood),         !- Name
+  MediumSmooth,                           !- Roughness
+  0.015,                                  !- Thickness {m}
+  0.140,                                  !- Conductivity {W/m-K}
+  650,                                    !- Density {kg/m3}
+  1200,                                   !- Specific Heat {J/kg-K}
+  ,                                       !- Thermal Absorptance
+  ,                                       !- Solar Absorptance
+  ;                                       !- Visible Absorptance
+
+! EXTERIOR WALLS
+
+Material,
+  BG4 - Ext Wall Façade (Cement Plaster), !- Name
+  MediumRough,                            !- Roughness
+  0.010,                                  !- Thickness {m}
+  0.720,                                  !- Conductivity {W/m-K}
+  1860,                                   !- Density {kg/m3}
+  800,                                    !- Specific Heat {J/kg-K}
+  0.91,                                   !- Thermal Absorptance
+  0.8,                                    !- Solar Absorptance
+  0.8;                                    !- Visible Absorptance
+
+Material,
+  BG4 - Ext Wall Concrete Block,          !- Name
+  MediumRough,                            !- Roughness
+  0.20,                                   !- Thickness {m}
+  1.400,                                  !- Conductivity {W/m-K}
+  2100,                                   !- Density {kg/m3}
+  840,                                    !- Specific Heat {J/kg-K}
+  ,                                       !- Thermal Absorptance
+  ,                                       !- Solar Absorptance
+  ;                                       !- Visible Absorptance
+
+Material,
+  BG4 - Ext Wall Insulation,              !- Name
+  MediumRough,                            !- Roughness
+  0.074,                                  !- Thickness {m}
+  0.035,                                  !- Conductivity {W/m-K}
+  25,                                     !- Density {kg/m3}
+  1000,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.5,                                    !- Solar Absorptance
+  0.5;                                    !- Visible Absorptance
+
+Material,
+  BG4 - Interior Ceiling (13mm gypsum board), !- Name
+  Smooth,                                     !- Roughness
+  0.013,                                      !- Thickness {m}
+  0.160,                                      !- Conductivity {W/m-K}
+  950,                                        !- Density {kg/m3}
+  840,                                        !- Specific Heat {J/kg-K}
+  0.9,                                        !- Thermal Absorptance
+  0.3,                                        !- Solar Absorptance
+  0.3;                                        !- Visible Absorptance
+
+Material,
+  BG4 - Int Wall Finish (13mm gypsum board),  !- Name
+  Smooth,                                     !- Roughness
+  0.013,                                      !- Thickness {m}
+  0.160,                                      !- Conductivity {W/m-K}
+  950,                                        !- Density {kg/m3}
+  840,                                        !- Specific Heat {J/kg-K}
+  0.9,                                        !- Thermal Absorptance
+  0.3,                                        !- Solar Absorptance
+  0.3;                                        !- Visible Absorptance
+
+! PARTY WALLS
+
+Material,
+  BG4 - Party Wall Concrete Block,        !- Name
+  MediumRough,                            !- Roughness
+  0.10,                                   !- Thickness {m}
+  1.400,                                  !- Conductivity {W/m-K}
+  2100,                                   !- Density {kg/m3}
+  840,                                    !- Specific Heat {J/kg-K}
+  ,                                       !- Thermal Absorptance
+  ,                                       !- Solar Absorptance
+  ;                                       !- Visible Absorptance
+
+! ROOF/CEILING
+
+Material,
+  BG4 - Roof Metal Cladding,              !- Name
+  Smooth,                                 !- Roughness
+  0.008,                                  !- Thickness {m}
+  0.290,                                  !- Conductivity {W/m-K}
+  1250,                                   !- Density {kg/m3}
+  1000,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.2,                                    !- Solar Absorptance
+  0.2;                                    !- Visible Absorptance
+
+Material,
+  BG4 - Roof Insulation,                  !- Name
+  MediumRough,                            !- Roughness
+  0.161,                                  !- Thickness {m}
+  0.035,                                  !- Conductivity {W/m-K}
+  25,                                     !- Density {kg/m3}
+  1000,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.5,                                    !- Solar Absorptance
+  0.5;                                    !- Visible Absorptance
+
+! EXTERIOR OPAQUE DOOR
+
+Material,
+  BG4 - Ext Door (pine),                  !- Name
+  MediumSmooth,                           !- Roughness
+  0.026,                                  !- Thickness {m}
+  0.140,                                  !- Conductivity {W/m-K}
+  419,                                    !- Density {kg/m3}
+  2720,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.6,                                    !- Solar Absorptance
+  0.6;                                    !- Visible Absorptance
+
+! BG4 WINDOW MATERIAL DEFINITIONS
+! --------------------------------------------------------------------------------------------------
+
+! WINDOWS & GLASS DOORS
+
+WindowMaterial:SimpleGlazingSystem,
+  BG4 - Glazing,                          !- Name
+  2.5,                                    !- U-Factor {W/m2-K}
+  0.58,                                   !- Solar Heat Gain Coefficient
+  0.57;                                   !- Visible Transmittance
+
+! BG4 CONSTRUCTION ASSEMBLIES
+! --------------------------------------------------------------------------------------------------
+
+! FLOOR-ON-FILL / GROUND FLOORS
+
+Construction,
+  BG4 - Floor on Fill,                    !- Name
+  BG4 - Floor on Fill Insulation,         !- Layer 1
+  BG4 - Concrete Floor Slab,              !- Layer 2
+  BG4 - Floor Finish (25mm wood);         !- Layer 3
+
+! EXTERIOR WALLS
+
+Construction,
+  BG4 - Ext Wall,                             !- Name
+  BG4 - Ext Wall Façade (Cement Plaster),     !- Layer 1
+  BG4 - Ext Wall Concrete Block,              !- Layer 2
+  BG4 - Ext Wall Insulation,                  !- Layer 3
+  BG4 - Int Wall Finish (13mm gypsum board);  !- Layer 4
+
+! PARTY WALLS
+
+Construction,
+  BG4 - Party Wall,                           !- Name
+  BG4 - Party Wall Concrete Block,            !- Layer 1
+  BG4 - Int Wall Finish (13mm gypsum board);  !- Layer 2
+
+! ROOF / CEILING ASSEMBLIES
+
+Construction,
+  BG4 - RoofCeiling,                          !- Name
+  BG4 - Roof Metal Cladding,                  !- Layer 1
+  BG4 - Roof Insulation,                      !- Layer 2
+  BG4 - Ext Wall Concrete Block,              !- Layer 3
+  BG4 - Int Wall Finish (13mm gypsum board);  !- Layer 4
+
+! EXTERIOR OPAQUE DOORS
+
+Construction,
+  BG4 - Ext Door,                         !- Name
+  BG4 - Ext Door (pine);                  !- Layer 1
+
+! WINDOWS AND GLASS DOORS
+
+Construction,
+  BG4 - Window/GlassDoor,                 !- Name
+  BG4 - Glazing;                          !- Layer 1
+
+
+! --------------------------------------------------------------------------------------------------
+! BG5 CONSTRUCTION SET
+! Source file: BG5_S0_baseline.idf
+! --------------------------------------------------------------------------------------------------
+
+! BG5 MATERIAL DEFINITIONS
+! --------------------------------------------------------------------------------------------------
+
+Material,
+  BG5 - Concrete Floor Slab,              !- Name
+  MediumRough,                            !- Roughness
+  0.2,                                    !- Thickness {m}
+  1.4,                                    !- Conductivity {W/m-K}
+  2100,                                   !- Density {kg/m3}
+  840,                                    !- Specific Heat {J/kg-K}
+  0.85,                                   !- Thermal Absorptance
+  0.65,                                   !- Solar Absorptance
+  0.65;                                   !- Visible Absorptance
+
+Material,
+  BG5 - Ext Door (pine),                  !- Name
+  MediumSmooth,                           !- Roughness
+  0.026,                                  !- Thickness {m}
+  0.14,                                   !- Conductivity {W/m-K}
+  419,                                    !- Density {kg/m3}
+  2720,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.6,                                    !- Solar Absorptance
+  0.6;                                    !- Visible Absorptance
+
+Material,
+  BG5 - Ext Wall Concrete Block,          !- Name
+  Smooth,                                 !- Roughness
+  0.2,                                    !- Thickness {m}
+  1.4,                                    !- Conductivity {W/m-K}
+  2100,                                   !- Density {kg/m3}
+  840,                                    !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG5 - Ext Wall Façade (cement plaster), !- Name
+  MediumRough,                            !- Roughness
+  0.01,                                   !- Thickness {m}
+  0.72,                                   !- Conductivity {W/m-K}
+  1860,                                   !- Density {kg/m3}
+  800,                                    !- Specific Heat {J/kg-K}
+  0.91,                                   !- Thermal Absorptance
+  0.35,                                   !- Solar Absorptance
+  0.35;                                   !- Visible Absorptance
+
+Material,
+  BG5 - Ext Wall Insulation,              !- Name
+  MediumRough,                            !- Roughness
+  0.074,                                  !- Thickness {m}
+  0.035,                                  !- Conductivity {W/m-K}
+  30,                                     !- Density {kg/m3}
+  1000,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG5 - Floor Finish (15mm wood),         !- Name
+  MediumSmooth,                           !- Roughness
+  0.015,                                  !- Thickness {m}
+  0.14,                                   !- Conductivity {W/m-K}
+  650,                                    !- Density {kg/m3}
+  1200,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG5 - Floor on Fill Insulation,         !- Name
+  MediumRough,                            !- Roughness
+  0.102,                                  !- Thickness {m}
+  0.035,                                  !- Conductivity {W/m-K}
+  25,                                     !- Density {kg/m3}
+  1400,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG5 - Int Wall Finish (13mm gypsum board), !- Name
+  Smooth,                                 !- Roughness
+  0.013,                                  !- Thickness {m}
+  0.16,                                   !- Conductivity {W/m-K}
+  950,                                    !- Density {kg/m3}
+  840,                                    !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.3,                                    !- Solar Absorptance
+  0.3;                                    !- Visible Absorptance
+
+Material,
+  BG5 - Party Wall Concrete Block,        !- Name
+  MediumRough,                            !- Roughness
+  0.15,                                   !- Thickness {m}
+  1.4,                                    !- Conductivity {W/m-K}
+  2100,                                   !- Density {kg/m3}
+  840,                                    !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG5 - Roof Insulation (concrete),       !- Name
+  MediumRough,                            !- Roughness
+  0.161,                                  !- Thickness {m}
+  0.035,                                  !- Conductivity {W/m-K}
+  30,                                     !- Density {kg/m3}
+  1000,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG5 - Roof Insulation (timber & metal), !- Name
+  MediumRough,                            !- Roughness
+  0.163,                                  !- Thickness {m}
+  0.035,                                  !- Conductivity {W/m-K}
+  30,                                     !- Density {kg/m3}
+  1000,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+Material,
+  BG5 - Roof Metal Cladding,              !- Name
+  Smooth,                                 !- Roughness
+  0.008,                                  !- Thickness {m}
+  0.29,                                   !- Conductivity {W/m-K}
+  1250,                                   !- Density {kg/m3}
+  1000,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.65,                                   !- Solar Absorptance
+  0.65;                                   !- Visible Absorptance
+
+Material,
+  BG5 - Roof Plywood Sheathing,           !- Name
+  MediumRough,                            !- Roughness
+  0.012,                                  !- Thickness {m}
+  0.15,                                   !- Conductivity {W/m-K}
+  560,                                    !- Density {kg/m3}
+  2500,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.7,                                    !- Solar Absorptance
+  0.7;                                    !- Visible Absorptance
+
+! BG5 WINDOW MATERIAL DEFINITIONS
+! --------------------------------------------------------------------------------------------------
+
+WindowMaterial:SimpleGlazingSystem,
+  BG5 - Glazing,                          !- Name
+  2,                                      !- U-Factor {W/m2-K}
+  0.58,                                   !- Solar Heat Gain Coefficient
+  0.57;                                   !- Visible Transmittance
+
+! BG5 CONSTRUCTION ASSEMBLIES
+! --------------------------------------------------------------------------------------------------
+
+! FLOOR-ON-FILL / GROUND FLOORS
+
+Construction,
+  BG5 - Floor on Fill,                    !- Name
+  BG5 - Floor on Fill Insulation,         !- Layer 1
+  BG5 - Concrete Floor Slab,              !- Layer 2
+  BG5 - Floor Finish (15mm wood);         !- Layer 3
+
+! INTERIOR FLOORS
+
+Construction,
+  BG5 - Interior Floor,                      !- Name
+  BG5 - Int Wall Finish (13mm gypsum board), !- Layer 1
+  BG5 - Concrete Floor Slab,                 !- Layer 2
+  BG5 - Floor Finish (15mm wood);            !- Layer 3
+
+! EXTERIOR WALLS
+
+Construction,
+  BG5 - Ext Wall (ext insulation),           !- Name
+  BG5 - Ext Wall Façade (cement plaster),    !- Layer 1
+  BG5 - Ext Wall Insulation,                 !- Layer 2
+  BG5 - Ext Wall Concrete Block,             !- Layer 3
+  BG5 - Int Wall Finish (13mm gypsum board); !- Layer 4
+
+Construction,
+  BG5 - Ext Wall (int insulation),           !- Name
+  BG5 - Ext Wall Façade (cement plaster),    !- Layer 1
+  BG5 - Ext Wall Concrete Block,             !- Layer 2
+  BG5 - Ext Wall Insulation,                 !- Layer 3
+  BG5 - Int Wall Finish (13mm gypsum board); !- Layer 4
+
+! PARTY WALLS
+
+Construction,
+  BG5 - Party Wall,                          !- Name
+  BG5 - Party Wall Concrete Block,           !- Layer 1
+  BG5 - Int Wall Finish (13mm gypsum board); !- Layer 2
+
+! ROOF / CEILING ASSEMBLIES
+
+Construction,
+  BG5 - RoofCeiling (concrete),              !- Name
+  BG5 - Roof Metal Cladding,                 !- Layer 1
+  BG5 - Roof Insulation (concrete),          !- Layer 2
+  BG5 - Ext Wall Concrete Block,             !- Layer 3
+  BG5 - Int Wall Finish (13mm gypsum board); !- Layer 4
+
+Construction,
+  BG5 - RoofCeiling (timber & metal),        !- Name
+  BG5 - Roof Metal Cladding,                 !- Layer 1
+  BG5 - Roof Insulation (timber & metal),    !- Layer 2
+  BG5 - Roof Plywood Sheathing,              !- Layer 3
+  BG5 - Int Wall Finish (13mm gypsum board); !- Layer 4
+
+! EXTERIOR OPAQUE DOORS
+
+! Build Construction definitions for envelope (floor on fill, ext walls, roof/ceilings, ext doors (opaque), 
+!    ext windows/glass doors, party walls)
+
+Construction,
+  BG5 - Ext Door (opaque),                !- Name
+  BG5 - Ext Door (pine);                  !- Layer 1
+
+! WINDOWS AND GLASS DOORS
+
+Construction,
+  BG5 - Window/GlassDoor,                 !- Name
+  BG5 - Glazing;                          !- Layer 1
+
+
