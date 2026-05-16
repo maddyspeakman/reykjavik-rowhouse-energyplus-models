@@ -1,4 +1,4 @@
-# Reykjavik Rowhouse EnergyPlus IDF Files
+# EnergyPlus Simulation Files for Residential Heating Energy Use Analysis in Reykjavík
 
 ## Purpose
 
