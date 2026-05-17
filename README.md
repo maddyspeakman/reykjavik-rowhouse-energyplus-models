@@ -25,17 +25,7 @@ Each IDF file represents one building group and one simulation scenario. The rep
 
 The `construction_assemblies/` folder contains the construction assembly files used to define the envelope construction sets for each building group.
 
-The construction assembly files are named by building group:
-
-```text
-BG1_constructions
-BG2_constructions
-BG3_constructions
-BG4_constructions
-BG5_constructions
-```
-
-These files document the construction assemblies assigned to each building group, including envelope components such as walls, roofs, floors, windows, and doors where applicable. The construction assemblies should be interpreted together with the IDF files and the methodology described in the associated master's thesis.
+These files document the construction assemblies assigned to each building group, including envelope components such as walls, roofs, floors, windows, and doors where applicable. The construction assemblies files are provided for explicit documentation of envelope properties modeled for each building group, and should be interpreted together with the IDF files and the methodology described in the associated master's thesis.
 
 ## Building Groups
 
