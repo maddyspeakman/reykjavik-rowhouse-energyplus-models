@@ -102,9 +102,9 @@ Compatibility with other EnergyPlus versions has not been tested.
 
 These files are intended as EnergyPlus model input files and supporting construction assembly documentation. Reproducing the simulation results reported in the associated thesis may require the same EnergyPlus version, weather file, simulation settings, and modeling assumptions described in the thesis.
 
-The IDF files include the modeled building geometry, construction definitions, internal gains, schedules, heating setpoint assumptions, AirflowNetwork inputs, and scenario-specific occupant behavior assumptions used in the simulations. The construction assembly files provide additional documentation of the envelope construction sets used for each building group.
+The IDF files include the modeled building geometry, construction definitions, internal gains, schedules, heating setpoint assumptions, AirflowNetwork and EnergyManagementSystem inputs for infiltration and manual ventilation, and scenario-specific occupant behavior assumptions used in the simulations. The construction assembly files provide explicit documentation of the envelope construction sets used for each building group, and are identical to the construction sets included in the IDF files.
 
-These files should be interpreted together with the thesis methodology, since not all assumptions can be fully documented within the IDF files or construction assembly files alone.
+These files should be interpreted together with the thesis methodology, since not all assumptions and simulation settings can be fully documented within the IDF files or construction assembly files alone.
 
 ## Exclusions
 
