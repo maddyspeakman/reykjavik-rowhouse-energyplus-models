@@ -131,7 +131,7 @@ If you reference or use these simulation files, please cite the archived reposit
 Repository citation:
 
 ```text
-Speakman, M. J. (2026). EnergyPlus simulation files for residential heating energy use analysis in Reykjavík (Version 1.0.0) [Computer software]. Zenodo. https://doi.org/[DOI to be added]
+Speakman, M. J. (2026). EnergyPlus simulation files for residential heating energy use analysis in Reykjavík (Version 1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.20258035
 ```
 
 Associated thesis:
