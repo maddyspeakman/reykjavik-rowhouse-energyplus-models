@@ -1,5 +1,7 @@
 # EnergyPlus Simulation Files for Residential Heating Energy Use Analysis in Reykjavík
 
+**Archived repository:** https://doi.org/10.5281/zenodo.20258035
+
 ## Purpose
 
 This repository contains EnergyPlus Input Data Files (IDF) and construction assembly files used for building energy simulations developed as part of a master's thesis on residential heating energy use in Icelandic row houses.
