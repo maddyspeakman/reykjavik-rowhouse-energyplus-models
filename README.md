@@ -88,17 +88,14 @@ BG1_S7_high_setpoint.idf
 Construction assembly files follow the naming convention:
 
 ```text
-BG{number}_constructions
+BG{number}_construction_set.idf
 ```
 
 Example file names:
 
 ```text
-BG1_constructions
-BG2_constructions
-BG3_constructions
-BG4_constructions
-BG5_constructions
+BG1_construction_set.idf
+BG2_construction_set.idf
 ```
 
 ## Software Environment
