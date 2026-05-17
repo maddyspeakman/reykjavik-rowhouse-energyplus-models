@@ -1,47 +1,51 @@
-# EnergyPlus Simulation Files for Residential Heating Energy Use Analysis in Reykjavík
+# EnergyPlus IDF Files for Residential Heating Energy Use Analysis in Reykjavík
 
 ## Purpose
 
-This repository contains EnergyPlus Input Data (IDF) files used in simulations for a master's thesis investigating heating energy use in representative Icelandic row houses. The IDF files are provided here because their length makes them impractical to include directly in thesis appendices.
+This repository contains EnergyPlus Input Data Files (IDF) used for building energy simulations developed as part of a master's thesis on residential heating energy use in Icelandic row houses.
+
+The thesis investigates variation in heating energy use among selected representative row-house building groups in Reykjavík, with a focus on physical building characteristics, occupant behavior, and operational assumptions.
+
+Thesis link: [Skemman link to be added]
 
 ## Repository Contents
 
-All EnergyPlus IDF files are organized in the `InputDataFiles/` directory by building group and scenario.
+The EnergyPlus input files are organized in the `InputDataFiles/` directory by building group and simulation scenario.
 
-### Building Groups
+## Building Groups
 
-The models represent **five representative Icelandic row-house building groups:**
+The models represent five representative row-house building groups:
 
-- **BG1** – Building Group 1
-- **BG2** – Building Group 2
-- **BG3** – Building Group 3
-- **BG4** – Building Group 4
-- **BG5** – Building Group 5
+- **BG1**: Building Group 1
+- **BG2**: Building Group 2
+- **BG3**: Building Group 3
+- **BG4**: Building Group 4
+- **BG5**: Building Group 5
 
-### Scenarios
+## Simulation Scenarios
 
-Each building group includes **eight scenarios** representing different occupant behavior and building operational parameters:
+Each building group includes eight simulation scenarios:
 
-- **S0: Baseline** – Reference scenario with standard assumptions
-- **S1: Low occupancy** – Reduced occupancy levels
-- **S2: High occupancy** – Increased occupancy levels
-- **S3: Daytime presence** – Modified occupancy patterns with daytime presence
-- **S4: Low ventilation** – Reduced ventilation rates
-- **S5: High ventilation** – Increased ventilation rates
-- **S6: Low setpoint** – Lower indoor temperature setpoint
-- **S7: High setpoint** – Higher indoor temperature setpoint
+- **S0: Baseline**: Reference scenario with baseline assumptions
+- **S1: Low occupancy**: Reduced number of occupants
+- **S2: High occupancy**: Increased number of occupants
+- **S3: Daytime presence**: Modified occupancy schedule with weekday daytime presence
+- **S4: Low ventilation**: Reduced manual ventilation assumptions
+- **S5: High ventilation**: Increased manual ventilation assumptions
+- **S6: Low setpoint**: Lower indoor heating setpoint
+- **S7: High setpoint**: Higher indoor heating setpoint
 
 ## File Naming Convention
 
-EnergyPlus IDF files follow the naming convention:
+IDF files follow the naming convention:
 
-```
+```text
 BG{number}_S{scenario_number}_{scenario_name}.idf
 ```
 
-### Examples
+Example file names:
 
-```
+```text
 BG1_S0_baseline.idf
 BG1_S1_low_occupancy.idf
 BG1_S2_high_occupancy.idf
@@ -54,27 +58,47 @@ BG1_S7_high_setpoint.idf
 
 ## Software Environment
 
-**EnergyPlus version:** v25.2.0-cf7368216c
+The files were prepared for use with:
+
+```text
+EnergyPlus v25.2.0-cf7368216c
+```
+
+Compatibility with other EnergyPlus versions has not been tested.
+
+## Notes on Use
+
+These files are provided to support transparency and reproducibility of the simulation setup used in the associated thesis. They are intended as EnergyPlus model input files and may require the same EnergyPlus version, weather file, and supporting assumptions described in the thesis to reproduce the reported simulation results.
 
 ## Exclusions
 
-This repository contains **only** EnergyPlus IDF model files. The following are **not** included:
+This repository contains only EnergyPlus IDF model files. The following materials are not included:
 
-- Raw smart meter data
-- Identifiable building-level information (addresses, household identifiers)
-- Survey responses and occupant behavior data
-- Simulation output files and results
-- Post-processing scripts and analysis code
-- Model input assumptions documentation
+- Raw smart-meter data
+- Address-level or identifiable building information
+- Survey responses or household-level occupant data
+- Simulation output files
+- Post-processing scripts
+- Full documentation of all modeling assumptions
 
-For information on the complete thesis project, including post-processing scripts, results analysis, and detailed model assumptions, please refer to the primary thesis documentation.
+For the complete methodology, assumptions, and interpretation of results, please refer to the associated master's thesis.
 
 ## Citation
 
-If you reference these IDF files or use them in your own research, please cite the associated master's thesis:
+If you reference or use these IDF files, please cite the archived repository and the associated master's thesis.
 
-[Citation information to be added]
+Repository citation:
+
+```text
+Speakman, M. J. (2026). EnergyPlus IDF files for residential heating energy use analysis in Reykjavík (Version 1.0.0) [Computer software]. Zenodo. https://doi.org/[DOI to be added]
+```
+
+Associated thesis:
+
+```text
+Speakman, M. J. (2026). [Thesis title to be added] [Master's thesis, Reykjavík University]. Skemman. [URL to be added]
+```
 
 ## License
 
-[License information to be added]
+License information to be added.
